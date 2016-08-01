@@ -1,0 +1,772 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'KoPub Dotum', sans-serif;
+    /* 300: Light, 400: Regular, 700: Bold */
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+#wrap {
+    display: block;
+
+    width: 100%;
+    min-width: 1024px;
+}
+
+.Header {
+    display: block;
+
+    padding: 0 30px 0 25px;
+
+    width: 100%;
+    height: 73px;
+
+    background-color: #000000;
+}
+
+.Header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.Header__logo {
+    float: left;
+    display: inline-block;
+
+    margin: 20px 0 19px 0;
+
+    width: 70px;
+    height: 34px;
+}
+
+.Header__logo:hover {
+    opacity: .85;
+}
+
+.Header__logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderMenu {
+    float: right;
+    display: inline-block;
+
+    height: 100%;
+}
+
+.HeaderMenu__item {
+    display: inline-block;
+
+    padding: 0 10px;
+    margin: 0 25px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 73px;
+    color: #ff5959;
+
+    text-decoration: none;
+}
+
+.HeaderMenu__item:hover {
+    opacity: .85;
+}
+
+.FrontMask {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 580px;
+
+    background-image: url('./assets/images/front-mask.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.FrontMask__title {
+    position: absolute;
+    display: block;
+
+    left: 0;
+    top: 170px;
+
+    width: 100%;
+
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+
+    -webkit-animation: onOpen 1 ease 0.6s;
+    -o-animation: onOpen 1 ease 0.6s;
+    animation: onOpen 1 ease 0.6s;
+}
+
+.FrontMask__aboutYoungs {
+    position: absolute;
+    display: inline-block;
+
+    left: calc(50% - 130px);
+    bottom: 130px;
+
+    width: 260px;
+    height: 60px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #ff5959;
+    border-radius: 10px;
+}
+
+.FrontMask__aboutYoungs:hover {
+    opacity: .85;
+}
+
+@keyframes onOpen {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.MovieMask {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 380px;
+
+    background-image: url('./assets/images/movie-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.MovieMask__border {
+    position: absolute;
+    display: block;
+
+    width: 54px;
+    height: 4px;
+
+    left: calc(50% - 27px);
+    top: 100px;
+
+    border: 0;
+    outline: 0;
+    background-color: #ffffff;
+}
+
+.MovieMask__title {
+    position: absolute;
+    display: block;
+
+    width: 100%;
+
+    left: 0;
+    top: 130px;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+.MovieMask__linkToYoutube {
+    position: absolute;
+    display: block;
+
+    width: 80px;
+    height: 80px;
+
+    padding: 0;
+    margin: 0;
+
+    left: calc(50% - 40px);
+    bottom: 100px;
+
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.MovieMask__linkToYoutube:hover {
+    opacity: .85;
+}
+
+.MovieMask__linkToYoutube > img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.AboutYoungs {
+    display: block;
+
+    width: 100%;
+    height: 830px;
+
+    border-bottom: 1px solid #979797;
+}
+
+.AboutYoungs:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.AboutYoungs__mockImg {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+    padding: 40px 0 56px 0;
+
+    width: 50%;
+    height: 100%;
+}
+
+.AboutYoungs__mockImg > img {
+    position: absolute;
+    display: block;
+
+    left: 10%;
+
+    width: 370px;
+    height: 734px;
+}
+
+.AboutYoungs__description {
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    width: 50%;
+    height: 100%;
+}
+
+.AboutYoungs__description > img {
+    position: absolute;
+
+    height: 96px;
+
+    left: 0;
+    top: 270px;
+}
+
+.AboutYoungs__description > span {
+    position: absolute;
+
+    left: 0;
+    top: 400px;
+
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.TestContents {
+    display: block;
+
+    padding: 85px 16px 131px 16px;
+
+    width: 100%;
+    height: 376px;
+}
+
+.TestContents:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.TestContentItem {
+    float: left;
+    display: block;
+
+    width: 20%;
+    height: 160px;
+}
+
+.TestContentItem__img {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 110px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+.TestContentItem__img > img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.TestContentItem__name {
+    display: block;
+
+    width: 100%;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #73798a;
+    text-align: center;
+}
+
+.TargetMask {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 580px;
+
+    background-image: url('./assets/images/target-mask.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.TargetMask__title {
+    position: absolute;
+    display: block;
+
+    width: 100%;
+
+    left: 0;
+    top: 204px;
+
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.TargetMask__description {
+    position: absolute;
+    display: block;
+
+    width: 100%;
+
+    left: 0;
+    bottom: 200px;
+
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+}
+
+.MainContents {
+    display: block;
+
+    padding: 150px 0;
+
+    width: 100%;
+    height: 510px;
+
+    border: 1px solid #979797;
+}
+
+.MainContents:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.MainContentsItem {
+    float: left;
+    display: inline-block;
+
+    width: 25%;
+    height: 210px;
+}
+
+.MainContentsItem__img {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 160px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+.MainContentsItem__img > img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.MainContentsItem__name {
+    display: block;
+
+    width: 100%;
+    height: 50px;
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #ff5959;
+    text-align: center;
+}
+
+.LeftMock {
+    display: block;
+
+    width: 100%;
+    height: 830px;
+
+    border-bottom: 1px solid #979797;
+}
+
+.LeftMock:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.LeftMock__mockImg {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+    padding: 40px 0 56px 0;
+
+    width: 50%;
+    height: 100%;
+}
+
+.LeftMock__mockImg > img {
+    position: absolute;
+    display: block;
+
+    left: 10%;
+
+    width: 370px;
+    height: 734px;
+}
+
+.LeftMock__description {
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    width: 50%;
+    height: 100%;
+}
+
+.LeftMock__description > span {
+    position: absolute;
+
+    left: 0;
+    top: 290px;
+
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.LeftMock__description > label {
+    position: absolute;
+
+    left: 0;
+    top: 460px;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #4a4a4a;
+}
+
+.RightMock {
+    display: block;
+
+    width: 100%;
+    height: 830px;
+}
+
+.RightMock:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.RightMock__mockImg {
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    padding: 40px 0 56px 0;
+
+    width: 45%;
+    height: 100%;
+}
+
+.RightMock__mockImg > img {
+    position: absolute;
+    display: block;
+
+    right: 10%;
+
+    width: 370px;
+    height: 734px;
+}
+
+.RightMock__description {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+    width: 55%;
+    height: 100%;
+}
+
+.RightMock__description > span {
+    position: absolute;
+    display: block;
+
+    width: 450px;
+
+    left: 50%;
+    top: 290px;
+
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.RightMock__description > label {
+    position: absolute;
+    display: block;
+
+    width: 450px;
+
+    left: 50%;
+    top: 460px;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #4a4a4a;
+    text-align: left;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.StartMask {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 580px;
+
+    background-image: url('./assets/images/start-mask.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.StartMask__logo {
+    position: absolute;
+
+    width: 130px;
+    height: 63px;
+
+    left: calc(50% - 65px);
+    top: 110px;
+}
+
+.StartMask__text {
+    position: absolute;
+    display: block;
+
+    width: 100%;
+
+    left: 0;
+    bottom: 225px;
+
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ApplyToTeach {
+    display: block;
+
+    width: 100%;
+    height: 587px;
+
+    padding-top: 103px;
+}
+
+.ApplyToTeach__title {
+    display: block;
+
+    width: 100%;
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #000000;
+    text-align: center;
+
+    margin-bottom: 62px;
+}
+
+.ApplyToTeach__context {
+    display: block;
+
+    width: 100%;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #000000;
+    text-align: center;
+}
+
+.ApplyToTeach__context > a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #ff5959;
+
+    cursor: pointer;
+}
+
+.ApplyToTeach__context > a:hover {
+    opacity: .85;
+}
+
+.Footer {
+    display: block;
+
+    padding: 0 35px;
+
+    width: 100%;
+    height: 80px;
+
+    background-color: #ececec;
+}
+
+.Footer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.Footer__logo {
+    float: left;
+    display: inline-block;
+
+    margin: 23px 0;
+
+    width: 70px;
+    height: 34px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Footer__menu {
+    float: right;
+    display: inline-block;
+
+    height: 80px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #9b9b9b;
+}
+
+.Footer__menu > span {
+    display: inline-block;
+    height: 80px;
+
+    cursor: default;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Footer__menu > span:first-child {
+    margin-right: 75px;
+}

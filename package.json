@@ -1,0 +1,25 @@
+{
+  "name": "youngs-web",
+  "version": "1.0.0",
+  "description": "Youngs: 나에게 필요한 스피킹 스킬을 실시간으로 습득하자!",
+  "main": "public/index.html",
+  "devdependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "surge": "^0.18.0"
+  },
+  "scripts": {
+    "start": "./node_modules/lite-server/bin/lite-server -c bs-config.json",
+    "deploy": "./node_modules/.bin/surge -p public/ -d youngspeaking.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodotdo/youngs-web.git"
+  },
+  "author": "dodotdo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dodotdo/youngs-web/issues"
+  },
+  "homepage": "https://github.com/dodotdo/youngs-web#readme"
+}
