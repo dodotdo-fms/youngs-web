@@ -1,12 +1,12 @@
 {
     "port": 8002,
     "files": [
-        "./public/index.html",
-        "./public/youngs.css",
-        "./public/youngs.js"
+        "./index.html",
+        "./youngs.css",
+        "./youngs.js"
     ],
     "server": {
-        "baseDir": "./public",
-        "index": "./public/index.html"
+        "baseDir": "./",
+        "index": "./index.html"
     }
 }
