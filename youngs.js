@@ -10,8 +10,4 @@ $(document).ready(function () {
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 800, 'easeInOutCubic');
     });
-
-    $('#moviePlay').on('click', function () {
-        location.href = 'https://youtu.be/TdNPYKUQgo8';
-    });
 });
